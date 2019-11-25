@@ -1,0 +1,1 @@
+export const stringish = (x) => x.toString();
