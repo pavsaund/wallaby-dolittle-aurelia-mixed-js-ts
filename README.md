@@ -1,6 +1,8 @@
 ## Wallaby mixed TS / JS using Dolittle
 This is a test / example project to recreate a bug scenario when running wallaby and the project contains a mix of TypeScript and JavaScript files. The example is based on a [Dolittle interaction template for TypeScript and Aurelia](https://github.com/dolittle-boilerplates/Interaction.Web.TS.Aurelia).
 
+Linked to issue: https://github.com/wallabyjs/public/issues/2281
+
 ### Recreating the failing test scenario
 
 - Run `yarn` to install dependencies
