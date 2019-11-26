@@ -1,0 +1,15 @@
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Dolittle. All rights reserved.
+ *  Licensed under the MIT License. See LICENSE in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+ @import '~DolittleStyles/Settings/all';
+ @import '~DolittleStyles/Tools/all.scss';
+ 
+body {
+    .default_layout {
+        @extend %flex-container;
+        flex-direction: column;
+        padding: 0;
+        height: 100vh;
+    }
+}

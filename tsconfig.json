@@ -1,8 +1,10 @@
 {
-    "extends": "./node_modules/@dolittle/typescript.build/TSConfig/tsconfig.example.single-package.json",
+    "extends": "./node_modules/@dolittle/typescript.build/TSConfig/tsconfig.base.json",
     "compilerOptions": {
-
         "allowJs": true,
+        "declaration": false,
         "checkJs": false,
+        // "target": "esnext",
+        // "module": "esnext"
     }
 }

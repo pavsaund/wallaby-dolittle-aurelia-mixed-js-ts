@@ -2,8 +2,8 @@ const build = require('@dolittle/typescript.build');
 
 module.exports = build.wallaby((wallaby, settings) => {
     settings.compilers = {
-        '**/*.js': wallaby.compilers.babel(),
-        '**/*.@(js|ts)': wallaby.compilers.typeScript({
+        '**/*.js': wallaby.compilers.babel({ babel: require('@babel/core') }),
+        '**/*.ts': wallaby.compilers.typeScript({
             module: 'commonjs',
             downlevelIteration: true,
             allowJs: true,
@@ -12,4 +12,5 @@ module.exports = build.wallaby((wallaby, settings) => {
             target: 'es6'
         })
     }
-});
+    settings.debug = true;
+}); 
