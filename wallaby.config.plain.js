@@ -38,8 +38,12 @@ module.exports = function (wallaby) {
                 allowJs: true,
                 experimentalDecorators: true,
                 esModuleInterop: true,
+                outDir: "/temp",
                 target: 'es6'
             })
+        },
+        preprocessors: {
+            '**/*.jsts': file => file.changeExt('js').content
         },
         setup: (wallaby) => {
             process.env.IS_TESTING = "true";

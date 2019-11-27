@@ -3,6 +3,26 @@ This is a test / example project to recreate a bug scenario when running wallaby
 
 Linked to issue: https://github.com/wallabyjs/public/issues/2281
 
+### Update with fix
+The fix involved was adding the following: 
+```js
+        compilers: {
+            '**/*.@(js|ts)': wallaby.compilers.typeScript({
+                module: 'commonjs',
+                downlevelIteration: true,
+                allowJs: true,
+                experimentalDecorators: true,
+                esModuleInterop: true,
++               outDir: './any',
+                target: 'es6'
+            })
+        },
++       preprocessors: {
++           '**/*.jsts': file => file.changeExt('js').content
++       },
+        setup: (wallaby) => {
+```
+
 ### Recreating the failing test scenario
 
 - Run `yarn` to install dependencies

@@ -4,7 +4,5 @@
         "allowJs": true,
         "declaration": false,
         "checkJs": false,
-        // "target": "esnext",
-        // "module": "esnext"
     }
 }
