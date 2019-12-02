@@ -1,0 +1,16 @@
+<template>
+    <h1>Modalizer</h1>
+    <div 
+        id="modal1" 
+        md-modal="
+            starting-top: 10%;
+            ending-top: 10%;
+            opacity: 0.7;" 
+        md-modal.ref="modal"
+    >
+        <div class="modal-content">
+            Modal content here
+        </div>
+    </div>
+    <button md-button click.delegate="openModal()">OPEN MODAL</button>
+</template>

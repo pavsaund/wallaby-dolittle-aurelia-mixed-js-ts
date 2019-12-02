@@ -4,5 +4,9 @@
         "allowJs": true,
         "declaration": false,
         "checkJs": false,
+        "strict": false,
+        "sourceMap": true,
+        "inlineSourceMap": false,
+        "inlineSources": false,
     }
 }
