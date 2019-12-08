@@ -5,7 +5,7 @@ Linked to issue: https://github.com/wallabyjs/public/issues/2281
 
 ### Update with fix
 The fix involved was adding the following: 
-```js
+```diff
         compilers: {
             '**/*.@(js|ts)': wallaby.compilers.typeScript({
                 module: 'commonjs',
